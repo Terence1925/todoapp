@@ -1,0 +1,68 @@
+html {
+  background-color: black;
+}
+
+.todolist {
+  text-align: center;
+
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+}
+
+#root > div > button {
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+#root > div > input[type="text"] {
+  height: 35px;
+  width: 300px;
+  margin-right: 2px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.btn {
+  margin-left: 5px;
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+.editbtn {
+  background-color: rgb(0, 62, 0);
+}
+
+.deletebtn {
+  background-color: red;
+}
+
+span {
+  font-size: xx-large;
+  padding: 20px;
+}
