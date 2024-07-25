@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 const Todolist = () => {
-  const [tasks, setTasks] = useState([
-    "Chest workout",
-    "Back workout",
-    "Shoulder workout",
-  ]);
+  const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
   const [editIndex, setEditIndex] = useState(null);
   const [editText, setEditText] = useState("");
