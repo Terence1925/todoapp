@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 const Todolist = () => {
-  const [tasks, setTasks] = useState([
-    "Chest workout",
-    "Back workout",
-    "Shoulder workout",
-  ]);
+  const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
   const [editIndex, setEditIndex] = useState(null);
   const [editText, setEditText] = useState("");
@@ -59,10 +55,13 @@ const Todolist = () => {
                     value={editText}
                     onChange={(e) => setEditText(e.target.value)}
                   />
-                  <button className="btn" onClick={() => editTask(index)}>
+                  <button className="btn save" onClick={() => editTask(index)}>
                     Save
                   </button>
-                  <button className="btn" onClick={() => setEditIndex(null)}>
+                  <button
+                    className="btn cancel"
+                    onClick={() => setEditIndex(null)}
+                  >
                     Cancel
                   </button>
                 </>
